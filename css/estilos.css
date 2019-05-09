@@ -1,0 +1,375 @@
+@import url("reset.css");
+
+/*=======================================================================
+  ESTILOS GENERALES
+========================================================================*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", Helvetica;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #333;
+  background-image: url(../imagenes/JUEGOT.jpg);
+  background-size: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1em;
+}
+
+img {
+  border: 0;
+}
+
+.contenedor {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .contenedor {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 720px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenedor {
+    max-width: 1140px;
+  }
+}
+
+.sectionTitle {
+  max-width: 70%;
+  margin: 0 auto 7rem;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .sectionTitle {
+    max-width: 100%;
+  }
+}
+
+.beforeTitle {
+  font-family: Kristi, "Comic Sans MS", cursive, sans-serif;
+  font-size: 7rem;
+  font-style: italic;
+  line-height: 5rem;
+  margin-bottom: .1em;
+  color: #cfa670;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.afterTitle {
+  font-size: 1.2rem;
+  margin: .5em 0;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.space {
+  padding: 10em 0;
+}
+
+.noPaddingTop {
+  padding-top: 0;
+}
+
+.noPaddingBottom {
+  padding-bottom: 0;
+}
+
+.leftSide,
+.rightSide {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+
+  .leftSide,
+  .rightSide {
+    width: 100%;
+  }
+}
+
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  font-family: "Lato", Helvetica;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  border-style: none;
+  background-color: #f442ad;
+  box-shadow: none;
+}
+
+/*=======================================================================
+  CABECERA
+========================================================================*/
+header {
+  width: 100%;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
+
+.topMenu {
+  font-size: 0;
+  background-color: #262626;
+}
+
+.topMenu .contenedor {
+  display: flex;
+}
+
+.topMenu .contactInfo,
+.topMenu .socialButtons {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.topMenu .contactInfo {
+  width: 75%;
+}
+
+.topMenu .socialButtons {
+  width: 25%;
+}
+
+.topMenu .contactInfo span {
+  margin-right: 1em;
+}
+
+.topMenu .contactInfo i {
+  font-size: 1.6rem;
+  margin-right: .5em;
+}
+
+.topMenu .socialButtons {
+  text-align: right;
+}
+
+.topMenu .socialButtons a {
+  margin-left: 1em;
+}
+
+.topMenu .socialButtons i {
+  font-size: 1.6rem;
+}
+
+.mainMenu {
+  background-color: transparent;
+}
+
+.mainMenu .contenedor {
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+
+.mainMenu nav {
+  text-align: right;
+  flex: 1;
+}
+
+.mainMenu nav a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.reservar {
+  padding: .8em 2em;
+  border: 2px solid #fff;
+}
+
+.logoBig {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logoSmall {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/*=======================================================================
+  SECCIONES
+========================================================================*/
+/* Intro */
+.intro {}
+
+.itemWrapper {
+  width: 60%;
+  margin: 300px auto;
+}
+
+.item {
+  height: 200px;
+  background: #fff;
+  box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+
+/*=======================================================================
+  PIE DE PAGINA
+========================================================================*/
+footer {
+  color: #999;
+  background-color: #262626;
+}
+
+footer a {
+  color: #fff;
+}
+
+.footerMain {
+  padding: 5em 0;
+  overflow: hidden;
+}
+
+.footerColumn {
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+}
+
+.footerColumn:last-of-type {
+  margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  .footerColumn {
+    width: 48%;
+    margin-bottom: 5em;
+  }
+
+  .footerColumn:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footerColumn {
+    width: 100%;
+    margin-bottom: 5em;
+    margin-right: 0;
+  }
+}
+
+.footerHeader {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footerColumn .logo {
+  margin-bottom: 1em;
+}
+
+.footerColumn .socialButtons a {
+  margin-right: 1em;
+}
+
+.footerColumn .recentPosts {
+  list-style: none;
+}
+
+.footerColumn .recentPosts li {
+  margin-bottom: .5em;
+}
+
+.footerColumn .recentPosts a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  display: block;
+}
+
+.footerColumn .recentPosts span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.footerColumn .contactInfo i {
+  margin-right: .5em;
+}
+
+.footerBottom {
+  padding: 1em 0;
+  border-top: 1px solid #444;
+  background-color: #1b1b1b;
+}
+
+.footerBottom .contenedor {
+  display: flex;
+}
+
+.footerBottom p {
+  margin-bottom: 0;
+}
+
+.footerCopyright,
+.footerMenu {
+  width: 50%;
+}
+
+.footerMenu {
+  text-align: right;
+}
+
+.footerMenu nav a {
+  font-size: 1.3rem;
+  margin-left: 2em;
+}
